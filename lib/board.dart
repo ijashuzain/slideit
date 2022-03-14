@@ -49,34 +49,34 @@ class _BoardState extends State<Board> {
       body: SafeArea(
         child: GestureDetector(
           onTap: () {
-            setState(() {
-              shuffled_numbers = [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6,
-                7,
-                8,
-                9,
-                10,
-                11,
-                0,
-                13,
-                14,
-                15,
-                12
-              ];
-            });
+            // setState(() {
+            //   shuffled_numbers = [
+            //     1,
+            //     2,
+            //     3,
+            //     4,
+            //     5,
+            //     6,
+            //     7,
+            //     8,
+            //     9,
+            //     10,
+            //     11,
+            //     0,
+            //     13,
+            //     14,
+            //     15,
+            //     12
+            //   ];
+            // });
           },
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   "Level 1",
-                  style: const TextStyle(
+                  style: TextStyle(
                       fontSize: 32,
                       color: primaryOrange,
                       fontFamily: "OpenSans",
@@ -85,9 +85,10 @@ class _BoardState extends State<Board> {
                 Text(
                   "Moves : $move",
                   style: const TextStyle(
-                      fontSize: 14,
-                      color: primaryOrange,
-                      fontFamily: "OpenSans"),
+                    fontSize: 14,
+                    color: primaryOrange,
+                    fontFamily: "OpenSans",
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(16.0),
