@@ -121,11 +121,26 @@ class _BoardState extends State<Board> {
                     ),
                   ),
                 ),
+                PopupMenuButton(itemBuilder: (context) {
+                  var menuItems = items.map((value) {
+                    return PopupMenuItem(
+                      child: Text(value),
+                    );
+                  }).toList();
+                  menuItems.insert(0, popupTitle());
+                  return menuItems;
+                })
               ],
             ),
           ),
         ),
       ),
+    );
+  }
+
+  PopupMenuItem popupTitle() {
+    return PopupMenuItem(
+      child: Text("Title Item"),
     );
   }
 

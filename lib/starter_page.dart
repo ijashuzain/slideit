@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:slideit/board.dart';
+import 'package:slideit/levels_page.dart';
 import 'package:slideit/utils/colors.dart';
 
 class StarterPage extends StatelessWidget {
@@ -34,11 +35,14 @@ class StarterPage extends StatelessWidget {
                           fontSize: 42,
                           fontWeight: FontWeight.bold,
                           fontFamily: "OpenSans")),
-                  const Text("Never let the game play you...",
-                      style: TextStyle(
-                          color: primaryOrange,
-                          fontSize: 12,
-                          fontFamily: "OpenSans")),
+                  const Text(
+                    "Never let the game play you...",
+                    style: TextStyle(
+                      color: primaryOrange,
+                      fontSize: 12,
+                      fontFamily: "OpenSans",
+                    ),
+                  ),
                   GestureDetector(
                     onTap: () {
                       Navigator.push(
